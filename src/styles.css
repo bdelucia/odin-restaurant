@@ -8,6 +8,12 @@ nav {
     gap: 20px;
     margin: 15px;
 }
+
+img {
+    height: 10rem;
+    width: auto;
+    align-self: center;
+}
 #content {
     display: flex;
     flex-direction: column;
