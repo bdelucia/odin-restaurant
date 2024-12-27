@@ -7,6 +7,8 @@ export function createHome() {
 
     headline.id = 'headline';
     headline.style.textAlign = 'center';
+    headline.style.fontSize = '1rem';
+    headline.style.fontWeight = '300';
     headline.textContent = `"You know, my father used to say, whatever you do, do it 100%. When you work, work. When you laugh, laugh. When you eat, eat like it's your last meal."`;
     headline.style.alignSelf = 'flex-start';
 

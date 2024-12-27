@@ -5,12 +5,14 @@ import logo from "./logo.jpg"
 import { createHome } from "./initial-load.js";
 import { clearContent } from "./clear-content.js";
 import { createMenu } from "./menu.js";
+import { createAbout } from "./about.js";
 
 const content = document.getElementById('content');
 const logoContainer = document.querySelector('#logo');
 const logoImg = document.createElement("img");
 const menuBtn = document.getElementById('menu');
 const homeBtn = document.getElementById('home');
+const aboutBtn = document.getElementById('about');
 
 logoImg.src = logo;
 logoContainer.appendChild(logoImg);
@@ -30,4 +32,9 @@ menuBtn.addEventListener('click', () => {
 homeBtn.addEventListener('click', () => {
     clearContent();
     createHome();
+})
+
+aboutBtn.addEventListener('click', () => {
+    clearContent();
+    createAbout();
 })
