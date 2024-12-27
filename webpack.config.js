@@ -11,10 +11,21 @@ module.exports = {
     },
     plugins: [
     new HtmlWebpackPlugin({
-      template: './src/template.html', // Path to your HTML file
+      template: './src/template.html', 
     }),
     ],
     devServer: {
-        static: './dist', // Serve from the "dist" folder
+        static: './dist', 
+    },
+    module: {
+        rules: [
+          {
+            test: /\.css$/i, 
+            use: [
+              'style-loader', 
+              'css-loader',   
+            ],
+          },
+        ],
     },
 };
