@@ -10,12 +10,13 @@ import tiramisu from './tiramisu.jpg';
 
 export function createMenu() {
     const content = document.getElementById('content');
-    content.style.padding = "10px";
+    content.style.justifyContent = 'center';
+    content.style.padding = '10px';
 
     const menuGrid = document.createElement('div');
     menuGrid.style.display = 'grid';
-    menuGrid.style.gridTemplateColumns = 'repeat(3, 1fr)'; // 3 columns of equal width
-    menuGrid.style.gap = '10px'; // Space between grid items
+    menuGrid.style.boxSizing = 'border-box';
+    menuGrid.style.gridTemplateColumns = 'repeat(3, 1fr)';
     menuGrid.style.maxWidth = '100%';
 
     const items = [
@@ -33,25 +34,21 @@ export function createMenu() {
     // Populate the grid
     items.forEach(item => {
         const gridItem = document.createElement('div');
-        gridItem.style.textAlign = 'center'; // Center-align content in each grid item
+        gridItem.style.textAlign = 'center'; 
 
         const image = document.createElement('img');
         image.src = item.src;
         image.alt = item.caption;
-        image.style.width = '150px'; // Ensure the image fits within the grid item
+        image.style.height = '100px'; 
+        image.style.width = '100px';
 
         const caption = document.createElement('p');
-        caption.textContent = item.caption;
-        caption.color = 'white';
-        caption.style.fontSize = '1rem';
-        caption.style.color = '#333';
+        caption.textContent = item.caption;      
 
         gridItem.appendChild(image);
         gridItem.appendChild(caption);
         menuGrid.appendChild(gridItem);
     });
-
-    // Clear existing content and add the grid to the content
     
     content.appendChild(menuGrid);
 }

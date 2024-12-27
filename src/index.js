@@ -14,7 +14,10 @@ const menuBtn = document.getElementById('menu');
 const homeBtn = document.getElementById('home');
 const aboutBtn = document.getElementById('about');
 
+logoImg.id = 'logoImg';
 logoImg.src = logo;
+logoImg.style.boxSizing = 'border-box';
+logoImg.style.padding = '10px';
 logoContainer.appendChild(logoImg);
 document.body.style.backgroundImage = `url(${background})`;
 document.body.style.backgroundSize = 'cover'; 
