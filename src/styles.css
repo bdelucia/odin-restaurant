@@ -1,5 +1,8 @@
 body {
     gap: 20px;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
 }
 nav {
     display: flex;
@@ -20,6 +23,9 @@ img {
     justify-content: center;
     align-items: center;
     gap: 15px;
+    background-color: lightgray;
+    margin: 0 auto;
+    width: fit-content;
 }
 
 #headline, .cell {
