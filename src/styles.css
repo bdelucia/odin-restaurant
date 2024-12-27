@@ -66,6 +66,7 @@ footer {
     margin: 0 auto; /* centers the content box */
     max-width: 33%;
     border-radius: 8px;
+    gap: 70px;
 }
 
 #headline, .cell {

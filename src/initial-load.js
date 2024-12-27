@@ -1,9 +1,11 @@
 import homeImage from './home.jpg'
 export function createHome() {
     const content = document.getElementById('content');
+    content.style.gap = '70px';
+    content.style.padding = '35px';
+
     const headline = document.createElement('div');
 
-    content.style.padding = "35px";
 
     headline.id = 'headline';
     headline.style.textAlign = 'center';
@@ -14,6 +16,7 @@ export function createHome() {
 
     const homeImg = document.createElement('img');
     homeImg.src = homeImage;
+    homeImg.style.height = '450px';
     
     content.appendChild(homeImg);
     content.appendChild(headline);
