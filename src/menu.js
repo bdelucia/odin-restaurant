@@ -10,12 +10,13 @@ import tiramisu from './tiramisu.jpg';
 
 export function createMenu() {
     const content = document.getElementById('content');
-    content.style.padding = "0px";
+    content.style.padding = "10px";
 
     const menuGrid = document.createElement('div');
     menuGrid.style.display = 'grid';
     menuGrid.style.gridTemplateColumns = 'repeat(3, 1fr)'; // 3 columns of equal width
-    menuGrid.style.gap = '20px'; // Space between grid items
+    menuGrid.style.gap = '10px'; // Space between grid items
+    menuGrid.style.maxWidth = '100%';
 
     const items = [
         { src: pizza, caption: 'Cheese Pizza' },
@@ -37,7 +38,7 @@ export function createMenu() {
         const image = document.createElement('img');
         image.src = item.src;
         image.alt = item.caption;
-        image.style.width = '100%'; // Ensure the image fits within the grid item
+        image.style.width = '150px'; // Ensure the image fits within the grid item
 
         const caption = document.createElement('p');
         caption.textContent = item.caption;
