@@ -10,6 +10,7 @@ import tiramisu from './tiramisu.jpg';
 
 export function createMenu() {
     const content = document.getElementById('content');
+    content.style.padding = "0px";
 
     const menuGrid = document.createElement('div');
     menuGrid.style.display = 'grid';

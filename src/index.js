@@ -10,6 +10,7 @@ const content = document.getElementById('content');
 const logoContainer = document.querySelector('#logo');
 const logoImg = document.createElement("img");
 const menuBtn = document.getElementById('menu');
+const homeBtn = document.getElementById('home');
 
 logoImg.src = logo;
 logoContainer.appendChild(logoImg);
@@ -24,4 +25,9 @@ createHome();
 menuBtn.addEventListener('click', () => {
     clearContent();
     createMenu();
+})
+
+homeBtn.addEventListener('click', () => {
+    clearContent();
+    createHome();
 })
