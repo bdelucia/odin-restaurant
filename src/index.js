@@ -4,4 +4,6 @@ const image = document.createElement("img");
 image.src = chickenparm;
    
 document.body.appendChild(image);
+console.log('image added');
+
 alert('what up playa');
