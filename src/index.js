@@ -7,6 +7,10 @@ import { clearContent } from "./clear-content.js";
 import { createMenu } from "./menu.js";
 import { createAbout } from "./about.js";
 
+if (process.env.NODE_ENV !== 'production') {
+    console.log('Looks like we are in development mode!');
+}
+
 const content = document.getElementById('content');
 const logoContainer = document.querySelector('#logo');
 const logoImg = document.createElement("img");
